@@ -1,0 +1,43 @@
+.header{
+    padding-top:20px;
+    padding-bottom: 60px;
+    background-color: white;
+
+   &__row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   &__menu-list{
+    display:flex;
+    font-size: 14px;
+    gap:0 20px;
+   }
+
+   &__social-list{
+    display:flex;
+    gap: 0 7px;
+   }
+
+   &__contacts{
+    max-width: 300px;
+    color: #2C636C;
+  
+   }
+   &__contacts-tel{
+    display:block;
+    font-weight: 400;
+    margin-bottom: 17px;
+   text-align: right;
+   }
+   &__contacts-address{
+    display:block;
+    font-weight: 400;
+font-size: 21px;
+span{
+    display:block;
+   text-align: right;
+    color: #FF6B00;
+}
+   }
+}

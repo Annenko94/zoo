@@ -1,0 +1,101 @@
+.services {
+  padding:50px 0 250px;
+
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #006b6a;
+    margin-bottom: 70px;
+    span {
+      color: black;
+    }
+  }
+  &__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    word-break: break-word;
+    gap: 50px;
+  }
+  &__card-item {
+    
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+    span{
+      font-weight: 400;
+font-size: 13px;
+color: #373737;
+    }
+    p{
+      margin-left: auto;
+      font-weight: 800;
+font-size: 11px;
+color: #00D3B3;
+text-transform: uppercase;
+
+    }
+  }
+
+  &__card-img {
+    display: block;
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+  }
+ 
+ 
+  &__card-name {
+   
+    font-weight: 600;
+    font-size: 20px;
+    color: #373737;
+    position: relative;
+  }
+  &__card-name::after {
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #2c636c;
+  }
+  
+ 
+  &__card-btn {
+    display: block;
+   margin-left: auto;
+   margin-right: 10px;
+   border-radius: 50%;
+   padding: 10px;
+   background-color: transparent;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &__card-btn:hover{
+    background-color: #00D3B3;
+    svg{
+     color:red;
+     background-color: red;
+    }
+  }
+  &__card-btn--rotate{
+
+ border-radius: 50%;
+padding: 10px;
+    background-color: #00D3B3;
+img{
+  width: 25px;
+  height: 25px;
+}
+  }
+
+}

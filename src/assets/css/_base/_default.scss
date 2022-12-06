@@ -1,0 +1,49 @@
+body {
+  @include textFont(20px, black, 500, $mainFont);
+  line-height: 1.2;
+  overflow-x: hidden;
+
+  background: linear-gradient(
+    45.84deg,
+    #fff3b4 80.18%,
+    #f0d1ff 15.56%
+  );
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main,
+#app {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    padding: 0 15px;
+  }
+}
+
+.grecaptcha-badge {
+  right: -9999px !important;
+}
+
+.lock {
+  height: 100vh;
+  overflow: hidden;
+}

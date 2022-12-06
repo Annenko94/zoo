@@ -1,0 +1,105 @@
+.feedback {
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #181818;
+    margin-bottom: 150px;
+    span {
+      color: #006b6a;
+    }
+  }
+  &__slider {
+
+
+  }
+  &__slider-wrapper {
+    display: inline-flex;
+    align-items: stretch;
+
+ 
+  }
+  &__card {
+    overflow-y: hidden;
+    padding: 40px 50px;
+    min-height: 300px;
+  height: auto;
+    width: 550px;
+    border: 1px solid #e3e3e3;
+    border-radius: 15px;
+    background-color: white;
+  }
+  &__card-user {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 35px;
+  }
+  &__card-avatar {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  &__card-user-name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: black;
+  }
+  &__card-date {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #8f8f8f;
+  }
+  &__card-text {
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+  }
+}
+
+.swiper-pagination-bullet {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #b7b7b7;
+}
+
+
+.swiper-slide-active{
+  transition: .2S ease-in-out;
+  transform: scale(1.1);
+}
+.swiper-pagination--feedback{
+  
+  width: fit-content;
+  
+  margin:200px auto 0;
+}
+
+.swiper-pagination-bullet{
+  background-color: black;
+  width: 11px;
+  height: 11px;
+  background-color: #0ADFC2;
+  transition: .2s ease-in-out;
+
+}
+.swiper-pagination-bullet:not(:last-child){
+margin-right: 8px;  
+}
+.swiper-pagination-bullet-active{
+background-color: #2C636C;
+width: 55px;
+border-radius: 21px;
+}
+
+
+

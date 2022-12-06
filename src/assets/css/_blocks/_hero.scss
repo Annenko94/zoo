@@ -1,0 +1,129 @@
+.hero {
+  background: linear-gradient(
+    176.84deg,
+    #fff3b4 3.18%,
+    #91fbe8 33.79%,
+    #b0ecff 63.91%,
+    #f0d1ff 93.56%
+  );
+
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    padding-top: 370px;
+    display: flex;
+    gap: 0 24px;
+  }
+
+  &__form {
+    width: 306px;
+    height: 480px;
+    background-image: url("../img/form-bg.png");
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    padding-top: 50px;
+  }
+  &__form-content {
+    text-align: center;
+  }
+
+  &__form-input {
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    border: 1px solid #cadfe4;
+    border-radius: 25px;
+    width: 242px;
+    height: 48px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    color: #2c636c;
+  }
+  &__form-input:focus {
+    outline: 2px solid #cadfe4;
+    transition: 0.2s all;
+    &::placeholder {
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  &__form-input--phone {
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 20px center;
+    padding-left: 20px;
+  }
+
+  &__form-input:not(:last-child) {
+    margin-bottom: 11px;
+  }
+  &__form-input:nth-child(3) {
+    height: 100px;
+    resize: none;
+    padding: 10px 5px 0;
+    &::placeholder {
+      padding-top: 20px;
+    }
+  }
+
+  &__form-radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+
+  &__form-input::placeholder {
+    color: #2c636c;
+    text-align: center;
+  }
+  &__form-btn {
+    margin: 10px auto 15px;
+    width: 242px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #1ccea1;
+    border-radius: 29px;
+    font-weight: 700;
+    font-size: 12px;
+    transition: 0.2s ease-in;
+    outline: white;
+  }
+  &__form-btn:hover {
+    outline: 1px solid #2c636c;
+  }
+  &__title {
+    max-width: 800px;
+    font-weight: 800;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #1ccea1;
+    margin-bottom: 11px;
+  }
+  &__text {
+    position: relative;
+    strong {
+      font-weight: 800;
+      font-size: 64px;
+      text-transform: uppercase;
+      color: white;
+    }
+    img {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 50px;
+    }
+  }
+}
